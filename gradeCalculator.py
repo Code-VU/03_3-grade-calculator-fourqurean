@@ -5,7 +5,7 @@ def calculateGrade():
 
     # User input for score
     try:
-        score_input = float(input("Enter a score between 9.9 and 0.0: "))
+        score_input = float(input("Enter a score between 9.9 and 0.1: "))
     except:
         print("Bad score")
         return
@@ -21,6 +21,8 @@ def calculateGrade():
         print("C")
     elif score_input >= 0.6 :
         print("D")
+    elif score_input <= 0.0 :
+        print("Bad score")
     else :
         print("F")
 
