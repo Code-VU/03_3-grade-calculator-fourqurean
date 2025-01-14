@@ -11,7 +11,7 @@ def calculateGrade():
         return
     
     # Scoring area
-    if score_input >= 10.0 :
+    if score_input >= 1.0 :
         print("Bad score")
     elif score_input >= 0.9 :
         print("A")
